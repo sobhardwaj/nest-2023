@@ -166,7 +166,7 @@
     "@types/preview-email": "^3.0.3",
     "@types/qrcode": "^1.5.4",
     "@types/qs": "6.9.9",
-    "@types/supertest": "2.0.15",
+    "@types/supertest": "6.0.2",
     "@types/swagger-stats": "^0.95.10",
     "@types/swagger-ui-express": "^4.1.5",
     "cross-env": "^7.0.3",
