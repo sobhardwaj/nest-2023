@@ -87,8 +87,8 @@ dependencies:
     specifier: ^10.1.1
     version: 10.1.1(@mikro-orm/core@5.9.0)(@mikro-orm/nestjs@5.2.2)(@nestjs/axios@3.0.0)(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13)(rxjs@7.8.1)
   '@nestjs/throttler':
-    specifier: ^5.0.1
-    version: 5.0.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13)
+    specifier: ^6.2.1
+    version: 6.2.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13)
   '@nestjs/websockets':
     specifier: ^10.2.7
     version: 10.2.7(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/platform-socket.io@10.2.7)(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -172,7 +172,7 @@ dependencies:
     version: 3.5.0(@nestjs/common@10.2.7)(pino-http@8.5.0)
   nestjs-throttler-storage-redis:
     specifier: ^0.4.1
-    version: 0.4.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/throttler@5.0.1)(ioredis@5.3.2)(reflect-metadata@0.1.13)
+    version: 0.4.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/throttler@6.2.1)(ioredis@5.3.2)(reflect-metadata@0.1.13)
   nodemailer:
     specifier: ^6.9.7
     version: 6.9.7
@@ -3394,16 +3394,15 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@nestjs/throttler@5.0.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13):
-    resolution: {integrity: sha512-6gHmKmus7LDgzK/wRh7W9cT3gtZw1rY4mLVymvx6pYyRA46A9fMvjmZNQKJbo02jGg2R7gNo+3pyfvNnjDqg4A==}
+  /@nestjs/throttler@6.2.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13):
+    resolution: {integrity: sha512-vdt6VjhKC6vcLBJRUb97IuR6Htykn5kokZzmT8+S5XFOLLjUF7rzRpr+nUOhK9pi1L0hhbzSf2v2FJl4v64EJA==}
     peerDependencies:
       '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
       '@nestjs/core': ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-      reflect-metadata: ^0.1.13
+      reflect-metadata: ^0.1.13 || ^0.2.0
     dependencies:
       '@nestjs/common': 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/core': 10.2.7(@nestjs/common@10.2.7)(@nestjs/platform-express@10.2.7)(@nestjs/websockets@10.2.7)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      md5: 2.3.0
       reflect-metadata: 0.1.13
     dev: false
 
@@ -6075,10 +6074,6 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /charenc@0.0.2:
-    resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
-    dev: false
-
   /check-disk-space@3.4.0:
     resolution: {integrity: sha512-drVkSqfwA+TvuEhFipiR1OC9boEGZL5RrWvVsOthdcvQNXyCCuKkEiTOTXZ7qxSf/GLwq4GvzfrQD/Wz325hgw==}
     engines: {node: '>=16'}
@@ -6568,10 +6563,6 @@ packages:
       which: 2.0.2
     dev: true
 
-  /crypt@0.0.2:
-    resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
-    dev: false
-
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
@@ -6987,6 +6978,7 @@ packages:
 
   /error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.2.1
     dev: true
@@ -8862,6 +8854,7 @@ packages:
 
   /is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
+    requiresBuild: true
     dev: true
 
   /is-arrayish@0.3.2:
@@ -8894,10 +8887,6 @@ packages:
       call-bind: 1.0.5
       has-tostringtag: 1.0.0
     dev: true
-
-  /is-buffer@1.1.6:
-    resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
-    dev: false
 
   /is-builtin-module@3.2.1:
     resolution: {integrity: sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==}
@@ -10068,6 +10057,7 @@ packages:
 
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
+    requiresBuild: true
     dev: true
 
   /linkify-it@3.0.3:
@@ -10395,14 +10385,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /md5@2.3.0:
-    resolution: {integrity: sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==}
-    dependencies:
-      charenc: 0.0.2
-      crypt: 0.0.2
-      is-buffer: 1.1.6
-    dev: false
 
   /mdast-util-from-markdown@0.8.5:
     resolution: {integrity: sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==}
@@ -10749,7 +10731,7 @@ packages:
       pino-http: 8.5.0
     dev: false
 
-  /nestjs-throttler-storage-redis@0.4.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/throttler@5.0.1)(ioredis@5.3.2)(reflect-metadata@0.1.13):
+  /nestjs-throttler-storage-redis@0.4.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/throttler@6.2.1)(ioredis@5.3.2)(reflect-metadata@0.1.13):
     resolution: {integrity: sha512-nSjPWfzAqwTFl6WA+wqwjJIHf63ffG9RJTojccHrDIE6cEk5Iw5IjO98crcBbu4PEqezWoX2eaUwAtpB1Ei8jA==}
     peerDependencies:
       '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -10760,7 +10742,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/core': 10.2.7(@nestjs/common@10.2.7)(@nestjs/platform-express@10.2.7)(@nestjs/websockets@10.2.7)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/throttler': 5.0.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13)
+      '@nestjs/throttler': 6.2.1(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(reflect-metadata@0.1.13)
       ioredis: 5.3.2
       reflect-metadata: 0.1.13
     dev: false
