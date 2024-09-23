@@ -81,7 +81,7 @@
     "@nestjs/serve-static": "^4.0.0",
     "@nestjs/swagger": "^7.1.14",
     "@nestjs/terminus": "^10.1.1",
-    "@nestjs/throttler": "^5.0.1",
+    "@nestjs/throttler": "^6.2.1",
     "@nestjs/websockets": "^10.2.7",
     "@paralleldrive/cuid2": "^2.2.2",
     "@sentry/hub": "^7.75.1",
