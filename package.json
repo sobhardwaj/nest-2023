@@ -57,7 +57,7 @@
     "@aws-sdk/client-s3": "^3.436.0",
     "@aws-sdk/client-ses": "^3.436.0",
     "@casl/ability": "^6.5.0",
-    "@golevelup/nestjs-rabbitmq": "^4.0.0",
+    "@golevelup/nestjs-rabbitmq": "^5.5.0",
     "@golevelup/nestjs-stripe": "^0.6.3",
     "@golevelup/nestjs-webhooks": "^0.2.16",
     "@ladjs/consolidate": "^1.0.3",
